@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reports | SkillPath</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+<div class="logo">🎓 SkillPath Admin</div>
+<nav>
+<a href="admin.html">Dashboard</a>
+<a href="index.html">Exit</a>
+</nav>
+</header>
+
+<div class="admin-layout">
+
+<aside class="sidebar">
+
+<h3>Admin Panel</h3>
+
+<a href="admin.html">📊 Dashboard</a>
+<a href="admin-families.html">👨‍👩‍👧 Families</a>
+<a href="admin-resistance.html">⚠️ Family Resistance</a>
+<a href="admin-careers.html">💼 Career Analytics</a>
+<a href="admin-training.html">🏫 Training Providers</a>
+<a href="admin-counsellors.html">🧑‍💼 Counsellors</a>
+<a href="admin-reports.html" class="active">📈 Reports</a>
+
+<hr>
+
+<a href="index.html">🚪 Exit Admin</a>
+
+</aside>
+
+<main class="admin-content">
+
+<h1>Reports & Insights</h1>
+<p>Generate administrative reports for decision-making.</p>
+
+<div class="admin-card-grid">
+
+<div class="admin-feature-card">
+<h3>📊 Family Engagement Report</h3>
+<p>Sessions, participation and counselling outcomes.</p>
+<button class="primary-btn" onclick="showNotification('Family report generated!')">
+Generate
+</button>
+</div>
+
+<div class="admin-feature-card">
+<h3>⚠️ Resistance Report</h3>
+<p>Major concerns and resistance by location.</p>
+<button class="primary-btn" onclick="showNotification('Resistance report generated!')">
+Generate
+</button>
+</div>
+
+<div class="admin-feature-card">
+<h3>💼 Career Demand Report</h3>
+<p>Popular vocational careers and skill demand.</p>
+<button class="primary-btn" onclick="showNotification('Career report generated!')">
+Generate
+</button>
+</div>
+
+<div class="admin-feature-card">
+<h3>🏫 Training Report</h3>
+<p>Training providers and course participation.</p>
+<button class="primary-btn" onclick="showNotification('Training report generated!')">
+Generate
+</button>
+</div>
+
+</div>
+
+</main>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

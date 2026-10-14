@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | SkillPath</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+    <div class="logo">
+        <span>🎓</span> SkillPath Admin
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="english.html">Student Portal</a>
+        <a href="marathi.html">मराठी</a>
+    </nav>
+</header>
+
+<div class="admin-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <h3>Admin Panel</h3>
+
+        <a href="admin.html" class="active">
+            📊 Dashboard
+        </a>
+
+        <a href="admin-families.html">
+            👨‍👩‍👧 Families
+        </a>
+
+        <a href="admin-resistance.html">
+            ⚠️ Family Resistance
+        </a>
+
+        <a href="admin-careers.html">
+            💼 Career Analytics
+        </a>
+
+        <a href="admin-training.html">
+            🏫 Training Providers
+        </a>
+
+        <a href="admin-counsellors.html">
+            🧑‍💼 Counsellors
+        </a>
+
+        <a href="admin-reports.html">
+            📈 Reports
+        </a>
+
+        <hr>
+
+        <a href="index.html">
+            🚪 Exit Admin
+        </a>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="admin-content">
+
+        <div class="page-heading">
+            <div>
+                <h1>Admin Dashboard</h1>
+                <p>Monitor vocational counselling and family decision support.</p>
+            </div>
+
+            <button class="primary-btn" onclick="showNotification('Report generated successfully!')">
+                📥 Generate Report
+            </button>
+        </div>
+
+
+        <!-- STATISTICS -->
+
+        <section class="stats-grid">
+
+            <div class="stat-card">
+                <div class="stat-icon">👨‍👩‍👧</div>
+                <h3>1,248</h3>
+                <p>Families Counselled</p>
+                <span class="positive">+12.5%</span>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">🎓</div>
+                <h3>1,865</h3>
+                <p>Students Reached</p>
+                <span class="positive">+18.2%</span>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">⚠️</div>
+                <h3>326</h3>
+                <p>High Resistance Cases</p>
+                <span class="negative">-8.4%</span>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">🤝</div>
+                <h3>184</h3>
+                <p>Counsellor Escalations</p>
+                <span class="positive">+6.8%</span>
+            </div>
+
+        </section>
+
+
+        <!-- QUICK ACCESS -->
+
+        <section class="admin-section">
+
+            <h2>Quick Access</h2>
+
+            <div class="admin-card-grid">
+
+                <a href="admin-families.html" class="admin-feature-card">
+                    <div class="feature-icon">👨‍👩‍👧</div>
+                    <h3>Family Engagement</h3>
+                    <p>View counselling sessions and family profiles.</p>
+                    <span>Open →</span>
+                </a>
+
+                <a href="admin-resistance.html" class="admin-feature-card">
+                    <div class="feature-icon">⚠️</div>
+                    <h3>Resistance Analysis</h3>
+                    <p>Understand major concerns affecting vocational decisions.</p>
+                    <span>Open →</span>
+                </a>
+
+                <a href="admin-careers.html" class="admin-feature-card">
+                    <div class="feature-icon">💼</div>
+                    <h3>Career Analytics</h3>
+                    <p>Analyze popular careers, skills and job demand.</p>
+                    <span>Open →</span>
+                </a>
+
+                <a href="admin-training.html" class="admin-feature-card">
+                    <div class="feature-icon">🏫</div>
+                    <h3>Training Providers</h3>
+                    <p>Monitor vocational institutes and course information.</p>
+                    <span>Open →</span>
+                </a>
+
+                <a href="admin-counsellors.html" class="admin-feature-card">
+                    <div class="feature-icon">🧑‍💼</div>
+                    <h3>Counsellors</h3>
+                    <p>Manage counsellor activity and escalated cases.</p>
+                    <span>Open →</span>
+                </a>
+
+                <a href="admin-reports.html" class="admin-feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Reports</h3>
+                    <p>View reports and download administrative insights.</p>
+                    <span>Open →</span>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONCERN ANALYSIS -->
+
+        <section class="admin-section">
+
+            <h2>Top Family Concerns</h2>
+
+            <div class="progress-container">
+
+                <div class="progress-item">
+                    <div>
+                        <span>💰 Income Potential</span>
+                        <strong>72%</strong>
+                    </div>
+                    <div class="progress-bar">
+                        <div style="width:72%"></div>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div>
+                        <span>🛡️ Job Security</span>
+                        <strong>61%</strong>
+                    </div>
+                    <div class="progress-bar">
+                        <div style="width:61%"></div>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div>
+                        <span>👥 Social Perception</span>
+                        <strong>48%</strong>
+                    </div>
+                    <div class="progress-bar">
+                        <div style="width:48%"></div>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div>
+                        <span>🎓 Further Education</span>
+                        <strong>43%</strong>
+                    </div>
+                    <div class="progress-bar">
+                        <div style="width:43%"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RECENT ACTIVITY -->
+
+        <section class="admin-section">
+
+            <h2>Recent Counselling Activity</h2>
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Family ID</th>
+                            <th>Location</th>
+                            <th>Concern</th>
+                            <th>Recommended Path</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>FAM-1024</td>
+                            <td>Kolhapur</td>
+                            <td>Salary</td>
+                            <td>Electrician</td>
+                            <td><span class="status success">Resolved</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>FAM-1023</td>
+                            <td>Sangli</td>
+                            <td>Job Security</td>
+                            <td>Healthcare Assistant</td>
+                            <td><span class="status warning">Counsellor</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>FAM-1022</td>
+                            <td>Satara</td>
+                            <td>Social Status</td>
+                            <td>Computer Technician</td>
+                            <td><span class="status success">Resolved</span></td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
